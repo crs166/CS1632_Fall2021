@@ -14,7 +14,11 @@ public class SquareTest {
 	 */
 	@Test
 	public void testSetSquared() {
-		// TODO: Fill in!
+		// DONE
+		Square square = new Square();
+		Number number = Mockito.mock(Number.class);
+		square.setSquared(number, 3);
+        Mockito.verify(number, Mockito.times(1)).setVal(9);
 	}
 
 }

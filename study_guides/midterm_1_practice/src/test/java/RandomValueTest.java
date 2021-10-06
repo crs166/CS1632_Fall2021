@@ -3,13 +3,16 @@ import static org.junit.Assert.*;
 
 import org.junit.*;
 import org.mockito.*;
+import java.util.Random;
 
 public class RandomValueTest {
 	RandomValue value;
+	Random random;
 
 	@Before
 	public void setUp() {
-		value = new RandomValue();
+		random = Mockito.mock(Random.class);
+		value = new RandomValue(random);
 	}
 	
 	@Test
@@ -19,12 +22,14 @@ public class RandomValueTest {
 	
 	@Test
 	public void testIncValOnce() {
+		Mockito.when(random.nextInt(2)).thenReturn(1);
 		value.incVal();
 		assertEquals(1, value.getVal());
 	}
 
 	@Test
 	public void testIncValTwice() {
+		Mockito.when(random.nextInt(2)).thenReturn(1);
 		value.incVal();
 		value.incVal();
 		assertEquals(2, value.getVal());
