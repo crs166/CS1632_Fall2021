@@ -152,9 +152,9 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 14 (Week of 29 NOV)
 
-* Class 1: Guest Lecture (TBD)
+* 11/29 (Monday) 3:00 - 4:15: (CGI Inc.)[https://www.cgi.com/en] lecture on Scalability Testing using JMeter
 
-* Class 2: Guest Lecture (TBD)
+* 12/1 (Wednesday) 9:30 - 10:45, 3:00 - 4:15: (US Steel)[https://www.ussteel.com/] lecture on Cyber Security and Penetration Testing
 
 ## WEEK 15 (Week of 6 DEC)
 
