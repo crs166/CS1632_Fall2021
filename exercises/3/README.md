@@ -28,7 +28,9 @@ It was chosen because it is a nice safe subreddit which is policed pretty well. 
 
 First, let's start by adding the Selenium IDE browser extension for your web
 browser by selecting "Chrome Download" or "Firefox Download" on the below
-website:
+website (**Update: the "Chrome Download" option seems to be temporarily
+unavailable in the Chrome web store so you will have to install Firefox and
+then install the extension there.**):
 
 https://www.selenium.dev/selenium-ide/
 
@@ -79,17 +81,17 @@ Selenium IDE.  Take a peek but don't loiter!
 
 Sometimes your test case will not work as expected.  Here are a few hints on how to debug a problem:
 
-1. Check the Log window at the bottom of the Selenium IDE.  It will tell you
+1. Check the **Log window** at the bottom of the Selenium IDE.  It will tell you
    which step failed for what reason (in red).
 
 1. Select the test step that failed in the main test case window, and then
-   select the Reference tab at the bottom pane of the IDE.  It will display
+   select the **Reference tab** at the bottom pane of the IDE.  It will display
 usage instructions for that command.  Remember always, the first argument goes
 to the Target field and the second argument goes to the Value field, regardless
 of command.
 
 1. Sometimes the target component of a test step is the problem.  The selector
-   button tries to generate a locator string as best it can using xpath, css
+   button tries to generate a **locator string** as best it can using xpath, css
 selector, or id tag.  But it is not fool proof.  The problem is, the web page
 may change ever so slightly on the next page load (e.g. due to a new post, or a
 new comment) and then the locator will stop working.  You will notice that
@@ -107,14 +109,6 @@ in-depth discussion about locators:
 not exist ("assert element not present").  But to do this, you have to select
 the XPath position locator string in the drop-down list of optional strings in
 the Target field.
-
-1. For those of you who are working in groups, you will be working on the same
-   shared .side project file. So it is especially important that your pull
-before opening the project file and push immediately after you have modified
-and saved the project file. Otherwise, you may get merge conflicts. Merging
-conflicts is possible by using the technique described in 
-[Using\_Git](https://github.com/wonsunahn/CS1632_Fall2021/blob/master/lectures/Using_Git.pdf)
-slides, but it's best to avoid it.
 
 ## Task 2: Add test cases to test suite and save project
 
@@ -150,13 +144,21 @@ comments.  Leave other boxes unchecked.
 1. Save the resulting file into "RedditCatsTest.java" to the root of the
    exercise 3 directory.
 
-1. You will have to also add this line to the beginning of the @Before
+1. You will have to also add these line(s) to the beginning of the @Before
 setUp() method in the generated RedditCatsTest.java file:
 
+   If you want to run your test suite on Chrome:
    ```
-   System.setProperty("webdriver.chrome.driver", "Windows/chromedriver.exe");
+   System.setProperty("webdriver.chrome.driver", "Chrome/chromedriver-win32.exe");
    ```
-   Or whatever the path is to your OS compatible chromedriver.  
+   If you are not using Windows, replace chromedriver-win32.exe with the webdriver compatible with your OS.
+
+   If you want to run your test suite on Firefox:
+   ```
+   System.setProperty("webdriver.gecko.driver", "Firefox/geckodriver-win64.exe");
+   System.setProperty("webdriver.firefox.logfile", "/dev/null");
+   ```
+   Again, if you are not using Windows, replace geckodriver-win64.exe with the webdriver compatible with your OS.  The second logfile property redirects verbose log messages emitted by the Firefox browser to a null device, discarding them.  This is done so that those messages don't get interleaved with JUnit messages and confuse you.
 
 You can now run the RedditCatsTest JUnit class using the provided
 [TestRunner.java](TestRunner.java) using one of the following scripts:
@@ -174,21 +176,21 @@ You can now run the RedditCatsTest JUnit class using the provided
 * You can also run your Selenium tests on Eclipse using the "Run JUnit"
   feature, after opening the provided Eclipse project.
 
-Note that the script only works if you have Chrome version 94 installed on your
-computer (the most recent version as of today).  If you have a different
-version of Chrome, you may have to update the chromedriver.exe (or
-chromedriver) in your respective OS folder (Windows / Mac / Linux) by
-downloading a new Chrome Web Driver from:
+Note that the Chrome webdriver only works if you have Chrome version 94
+installed on your computer (the most recent version as of today).  If you have
+a different version of Chrome, you may have to download the appropriate
+webdriver from:
 
 https://chromedriver.chromium.org/downloads
 
 Your Chrome version can be obtained by clicking on the vertical-3-dot menu at
 the top right corner of your browser, then Help > About Google Chrome.
 
-If things go properly, you will see the Chrome browser pop up repeatedly for
-each test case, perform the actions, and close.  In the command line, you
-should see "ALL TESTS PASSED", which is printed by TestRunner if there are no
-failures.
+The Firefox webdriver should work for all recent versions of Firefox.
+
+If things go properly, you will see the browser pop up repeatedly for each test
+case, perform the actions, and close.  In the command line, you should see "ALL
+TESTS PASSED", which is printed by TestRunner if there are no failures.
 
 There are multiple reasons why you would want to export to JUnit:
 
@@ -350,6 +352,15 @@ options.addArguments("--headless");
 options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
 driver = new ChromeDriver(options);
 ```
+
+## Groupwork Plan
+
+I suggest that each partner in the group works on this individually.  There is
+only one single file that you will be modifying the Selenium IDE (.side)
+project file, or the RedditCatsTest.java file.  And it would be difficult for
+both of you to work on that single file.  Parallel modifications would result
+in frequent merge conflicts.  When both of you are done, compare your work and
+submit one finalized version to GradeScope.
 
 ## Resources
 
