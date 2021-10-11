@@ -70,7 +70,7 @@ FUN-SIGNUP-LINK - "store attribute" followed by "assert".  You will be
 storing the href attribute value to a Selenium variable and asserting on the
 value of that variable.  Now the target argument for "store attribute" does
 not directly take a locator string.  If you see the Reference tab for the
-command, you will see that it takes <locator string>@<attribute name>
+command, you will see that it takes \<locator string\>@\<attribute name\>
 instead, where the attribute name in this case is "href".  Since the target
 argument is not a locator string, the target selector button is disabled.
 If you want to still use the target selector to at least get the locator
