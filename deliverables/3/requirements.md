@@ -4,7 +4,7 @@ FUN-LINKS - Every page shall include five links at the top, to "Catalog", "Rent-
 
 FUN-LISTING - Every page shall display a listing of three rows under the text "Cats available for rent:".  If all cats are available, the rows shall display "ID 1. Jennyanydots", "ID 2. Old Deuteronomy", and "ID 3. Mistoffelees", respectively.  If a cat is rented out and is no longer available, the corresponding row shall be replaced with "Rented out".
 
-FUN-CATALOG - The Catalog page (`/`) shall display exactly three images of cats in a numbered list.  The three images shall have file names "cat1.jpg", "cat2.jpg", and "cat3.jpg" respectively.
+FUN-CATALOG - The Catalog page (`/`) shall display exactly three images of cats in a numbered list.  The three images shall have file paths "/images/cat1.jpg", "/images/cat2.jpg", and "/images/cat3.jpg" respectively.
 
 FUN-RENT-A-CAT - The Rent-A-Cat page (`/rent-a-cat`) shall display an input box to enter the ID of the cat to rent alongside a "Rent" button.  It shall also display an input box to enter the ID of the cat to return alongside a "Return" button.
 
