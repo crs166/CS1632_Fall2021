@@ -7,10 +7,10 @@ TEST CASES:
 
 ```
 IDENTIFIER: TEST-LINKS
-TEST CASE: Check that the "Rent-A-Cat" link properly points to `/rent-a-cat`.
+TEST CASE: Check that the "Reset" link properly points to `/reset`.
 PRECONDITIONS: None.
 EXECUTION STEPS: None.
-POSTCONDITIONS: The href link of the "Rent-A-Cat" menu item points to `/rent-a-cat`.
+POSTCONDITIONS: The href link of the "Reset" menu item points to `/reset`.
 ```
 
 ```
