@@ -209,23 +209,19 @@
       "targets": [],
       "value": ""
     }, {
-      "id": "daf9dc5e-911e-4685-b680-5e21f6c527d7",
+      "id": "be8aeba2-d0da-4ce2-9e66-7b92df2fe58f",
       "comment": "",
-      "command": "assertElementPresent",
-      "target": "xpath=//div[2]/div[10]/div/div/div",
-      "targets": [
-        ["css=.\\_8ZLJI1-ZiP7pHJ_yO1L4Z:nth-child(11) .\\_36D5hmBSZbFxkFMkiWg6cY", "css:finder"],
-        ["xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[3]/div[2]/div/div[4]/div/div[2]/div[11]/div/div/div", "xpath:idRelative"],
-        ["xpath=//div[2]/div[11]/div/div/div", "xpath:position"]
-      ],
-      "value": ""
-    }, {
-      "id": "ef01e907-798a-4b7c-9d79-7064d650423e",
-      "comment": "",
-      "command": "assertElementNotPresent",
-      "target": "xpath=//div[2]/div[11]/div/div/div",
+      "command": "storeXpathCount",
+      "target": "xpath=//div[@id='SHORTCUT_FOCUSABLE_DIV']/div[2]/div/div/div/div[2]/div[3]/div[2]/div/div[4]/div/div[2]/div/div/div[2]/div",
       "targets": [],
-      "value": ""
+      "value": "rules"
+    }, {
+      "id": "21612d43-1b15-4370-b950-9a17fba88004",
+      "comment": "",
+      "command": "assert",
+      "target": "rules",
+      "targets": [],
+      "value": "10"
     }]
   }],
   "suites": [{
