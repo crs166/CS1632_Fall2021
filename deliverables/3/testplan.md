@@ -110,7 +110,7 @@ PRECONDITIONS: None.
 EXECUTION STEPS:
 1. Navigate to the `/greet-a-cat/Jennyanydots` URL be opening on browser.
 POSTCONDITIONS: 
-1. The text "Meow!" appears on the page.
+1. The text "Meow! from Jennyanydots." appears on the page.
 ```
 
 ```
