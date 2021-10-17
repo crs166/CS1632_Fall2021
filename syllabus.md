@@ -152,6 +152,8 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 14 (Week of 29 NOV)
 
+* 11/29 (Monday) 9:30 - 10:45: [PNC Bank](https://www.pnc.com) TBD
+
 * 11/29 (Monday) 3:00 - 4:15: [CGI Inc.](https://www.cgi.com/en) lecture on Scalability Testing using JMeter
 
 * 12/1 (Wednesday) 9:30 - 10:45, 3:00 - 4:15: [US Steel](https://www.ussteel.com/) lecture on Cyber Security and Penetration Testing
