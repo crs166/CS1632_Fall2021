@@ -15,7 +15,7 @@ Fall Semester 2021 - Exercise 4
 
 * DUE: Nov 8 (Monday), 2021 09:30 AM
 
-**GitHub Classroom Link:** TBD
+**GitHub Classroom Link:** https://classroom.github.com/a/VjHmAXWy
 
 ## Before You Begin
 
