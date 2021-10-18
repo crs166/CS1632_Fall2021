@@ -8,7 +8,7 @@ public class MainPanel extends JPanel {
 	private Cell[][] cells;
 
 	// Backup configuration
-	private Cell[][] _backupCells;
+	private Cell[][] backupCells;
 
 	private int size = 0;
 
@@ -145,11 +145,11 @@ public class MainPanel extends JPanel {
 	 */
 
 	public void backup() {
-		_backupCells = new Cell[size][size];
+		backupCells = new Cell[size][size];
 		for (int j = 0; j < size; j++) {
 			for (int k = 0; k < size; k++) {
-				_backupCells[j][k] = new Cell();
-				_backupCells[j][k].setAlive(cells[j][k].getAlive());
+				backupCells[j][k] = new Cell();
+				backupCells[j][k].setAlive(cells[j][k].getAlive());
 			}
 		}
 	}
@@ -167,7 +167,7 @@ public class MainPanel extends JPanel {
 			for (int j = 0; j < size; j++) {
 				for (int k = 0; k < size; k++) {
 
-					if (_backupCells[j][k].getAlive()) {
+					if (backupCells[j][k].getAlive()) {
 						System.out.print("X");
 					} else {
 						System.out.print(".");
@@ -285,7 +285,7 @@ public class MainPanel extends JPanel {
 	 */
 
 	public void undo() {
-		displayIteration(convertToBoolean(_backupCells));
+		displayIteration(convertToBoolean(backupCells));
 	}
 
 	/**

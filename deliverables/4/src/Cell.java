@@ -4,9 +4,9 @@ import java.awt.event.*;
 
 public class Cell extends JButton {
 
-	private boolean _beenAlive = false;
+	private boolean beenAlive = false;
 
-	private int _maxSize = 10000;
+	private int maxSize = 10000;
 
 	public Cell() {
 		super(" ");
@@ -22,7 +22,7 @@ public class Cell extends JButton {
 	}
 
 	public void resetBeenAlive() {
-		_beenAlive = false;
+		beenAlive = false;
 	}
 
 	public void reset() {
@@ -38,7 +38,7 @@ public class Cell extends JButton {
 	public String toString() {
 		String toReturn = new String("");
 		String currentState = getText();
-		for (int j = 0; j < _maxSize; j++) {
+		for (int j = 0; j < maxSize; j++) {
 			toReturn += currentState;
 		}
 		if (toReturn.substring(0, 1).equals("X")) {
@@ -52,12 +52,12 @@ public class Cell extends JButton {
 		// note that "if (a)" and "if (a == true)"
 		// really say the same thing!
 		if (a) {
-			_beenAlive = true;
+			beenAlive = true;
 			setText("X");
 			setBackground(Color.RED);
 		} else {
 			setText(" ");
-			if (_beenAlive) {
+			if (beenAlive) {
 				setBackground(Color.GREEN);
 			} else {
 				setBackground(Color.GRAY);

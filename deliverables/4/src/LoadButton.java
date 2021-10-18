@@ -4,11 +4,11 @@ import java.util.*;
 
 public class LoadButton extends JButton {
 
-	private MainPanel _m;
+	private MainPanel m;
 
 	public LoadButton(MainPanel m) {
 		super("Load");
-		_m = m;
+		this.m = m;
 		addActionListener(new LoadButtonListener());
 	}
 
@@ -17,7 +17,7 @@ public class LoadButton extends JButton {
 		public void actionPerformed(ActionEvent e) {
 			String fileName = "backup.txt";
 			ArrayList<String> info = FileAccess.loadFile(fileName);
-			_m.load(info);
+			m.load(info);
 		}
 	}
 

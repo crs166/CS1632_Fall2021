@@ -4,11 +4,11 @@ import java.awt.event.*;
 
 public class WriteButton extends JButton {
 
-	private MainPanel _m;
+	private MainPanel m;
 
 	public WriteButton(MainPanel m) {
 		super("Write");
-		_m = m;
+		this.m = m;
 		addActionListener(new WriteButtonListener());
 	}
 
@@ -16,7 +16,7 @@ public class WriteButton extends JButton {
 
 		public void actionPerformed(ActionEvent e) {
 
-			String toWrite = _m.toString();
+			String toWrite = m.toString();
 
 			boolean success = FileAccess.saveFile("backup.txt", toWrite);
 

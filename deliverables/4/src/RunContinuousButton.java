@@ -3,11 +3,11 @@ import java.awt.event.*;
 
 public class RunContinuousButton extends JButton {
 
-	private MainPanel _m;
+	private MainPanel m;
 
 	public RunContinuousButton(MainPanel m) {
 		super("Run Continuous");
-		_m = m;
+		this.m = m;
 		addActionListener(new RunContinuousButtonListener());
 	}
 
@@ -20,7 +20,7 @@ public class RunContinuousButton extends JButton {
 
 	class GameRunnable implements Runnable {
 		public void run() {
-			_m.runContinuous();
+			m.runContinuous();
 		}
 	}
 

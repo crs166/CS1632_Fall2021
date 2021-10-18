@@ -3,18 +3,18 @@ import java.awt.event.*;
 
 public class StopButton extends JButton {
 
-	private MainPanel _m;
+	private MainPanel m;
 
 	public StopButton(MainPanel m) {
 		super("Stop");
-		_m = m;
+		this.m = m;
 		addActionListener(new StopButtonListener());
 	}
 
 	class StopButtonListener implements ActionListener {
 
 		public void actionPerformed(ActionEvent e) {
-			_m.stop();
+			m.stop();
 		}
 	}
 

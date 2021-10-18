@@ -3,11 +3,11 @@ import java.awt.event.*;
 
 public class UndoButton extends JButton {
 
-	private MainPanel _m;
+	private MainPanel m;
 
 	public UndoButton(MainPanel m) {
 		super("Undo");
-		_m = m;
+		this.m = m;
 		addActionListener(new UndoButtonListener());
 	}
 
@@ -15,7 +15,7 @@ public class UndoButton extends JButton {
 
 		public void actionPerformed(ActionEvent e) {
 			// System.out.println("Undo button pressed!");
-			_m.undo();
+			m.undo();
 		}
 	}
 
