@@ -22,7 +22,7 @@ public class WriteButton extends JButton {
 
 			if (!success) {
 				JOptionPane.showMessageDialog((Component) e.getSource(), "COULD NOT WRITE FILE backup.txt",
-						"BROUGHT TO YOU BY BILL LABOON", JOptionPane.WARNING_MESSAGE);
+						"BROUGHT TO YOU BY WONSUN AHN", JOptionPane.WARNING_MESSAGE);
 			}
 
 		}
