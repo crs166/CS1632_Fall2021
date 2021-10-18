@@ -152,8 +152,6 @@ public class MonkeySim {
 	 */
 
 	public int runSimulation(List<Monkey> ml, MonkeyWatcher mw) {
-		int nextMonkey = -1;
-
 		while (!getFirstMonkey(ml).hasBanana()) {
 			mw.incrementRounds();
 			Monkey m = ml.get(monkeyWithBanana(ml));
