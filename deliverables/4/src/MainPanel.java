@@ -22,10 +22,6 @@ public class MainPanel extends JPanel {
 		return size;
 	}
 
-	public void setCells(Cell[][] cells) {
-		this.cells = cells;
-	}
-
 	public Cell[][] getCells() {
 		return cells;
 	}
