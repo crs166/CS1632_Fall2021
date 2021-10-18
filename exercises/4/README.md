@@ -13,7 +13,7 @@
 # Exercise 4 Performance Testing Exercise
 Fall Semester 2021 - Exercise 4
 
-* DUE: Nov 8 (Monday), 2021 09:30 AM
+* DUE: Oct 22 (Friday), 2021 11:59 PM
 
 **GitHub Classroom Link:** https://classroom.github.com/a/VjHmAXWy
 
