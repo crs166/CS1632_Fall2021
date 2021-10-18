@@ -1,7 +1,6 @@
 
 *.un~
 *.md~
-.course-info.md.swp
 *.swp
 *.bat~
 *.sh~
@@ -9,5 +8,4 @@
 *.txt~
 *.java~
 *.c~
-exercises/2/.DS_Store
 *.side~
