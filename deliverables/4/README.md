@@ -1,4 +1,4 @@
-- [CS 1632 - Software Quality Assurance](#cs-1632---software-quality-assurance)
+- [CS 1632 - Software Quality Assurance](#cs-1632-software-quality-assurance)
   * [Description](#description)
   * [How to Run SlowLifeGUI](#how-to-run-slowlifegui)
   * [What do do](#what-do-do)
