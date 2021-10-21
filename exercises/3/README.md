@@ -463,7 +463,7 @@ public void setUp() {
 **Note: Please do not add any setup code other than the ones shown above
 because they will be replaced by GradeScope.  Also, please do not mess with the
 beginning of the method declaration "public void setUp() {" since it is used
-for patter detection in GradeScope to replace the method.**
+for pattern detection in GradeScope to replace the method.**
 
 ## Groupwork Plan
 
