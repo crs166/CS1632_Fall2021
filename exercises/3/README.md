@@ -431,17 +431,39 @@ You may be curious how I was able to run the tests on the GradeScope docker
 images when they most likely don't have displays to render the Chrome browser.
 The Chrome webdriver, as well as other webdrivers, can be run in "headless"
 mode.  That is, the tests can be performed inside the web engine without having
-to actually display the page.  This is very common practice since in a work
-setting, testers will be running tests on server machines or even on the cloud
-in docker images like I did.  If you need to do this in the future, you can
-achieve this by passing options when creating the Chrome webdriver:
+to actually display the page.  This is common practice since in a work setting,
+testers will be running tests on server machines or even on the cloud in Docker
+images like I did.  If you need to do this in the future, you can achieve this
+by passing additional options when creating the Chrome webdriver:
 
 ```
-ChromeOptions options = new ChromeOptions();
-options.addArguments("--headless");
-options.addArguments("--disable-dev-shm-usage"); // overcome limited resource problems
-driver = new ChromeDriver(options);
+options.addArguments("--headless");			// Enable running without a display
+options.addArguments("--disable-dev-shm-usage");	// Disable /dev/shm which is limited to 64MB in Docker and use /tmp/ instead to store shared memory files
 ```
+
+I add the above options by replacing the setUp() method in RedditCatsTest.java
+with my own version that looks like the following:
+
+```
+@Before
+public void setUp() {
+    System.setProperty("webdriver.chrome.driver", "Linux/chromedriver");
+    ChromeOptions options = new ChromeOptions();
+    options.addArguments("--headless");			// Enable running without a display
+    options.addArguments("--disable-dev-shm-usage");	// Disable /dev/shm which is limited to 64MB in Docker and use /tmp/ instead to store shared memory files
+    options.addArguments("--no-sandbox");		// A quick and dirty way to run Selenium as root, bypassing the OS security model
+    driver = new ChromeDriver(options);
+    driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
+    driver.manage().window().setSize(new Dimension(1200, 800));
+    js = (JavascriptExecutor) driver;
+    vars = new HashMap<String, Object>();
+}
+```
+
+**Note: Please do not add any setup code other than the ones shown above
+because they will be replaced by GradeScope.  Also, please do not mess with the
+beginning of the method declaration "public void setUp() {" since it is used
+for patter detection in GradeScope to replace the method.**
 
 ## Groupwork Plan
 
