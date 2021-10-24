@@ -22,7 +22,7 @@ Fall Semester 2021 - Supplementary Exercise 3
 
 * DUE: Oct 29 (Friday), 2021 11:59 PM 
 
-**GitHub Classroom Link:** TBD
+**GitHub Classroom Link:** https://classroom.github.com/a/RJUac-Ac
 
 ## Description
 
@@ -410,7 +410,7 @@ we expect all tests to fail, if you have done the work.
 
 * DUE: Nov 8 (Monday), 2021 09:30 AM
 
-**GitHub Classroom Link:** TBD
+**GitHub Classroom Link:** https://classroom.github.com/a/PCnHnRxs
 
 This extra credit is worth 1 point out of 100 points for the entire course.
 Note that you need to get 100/100 on the autograder to get credit.  Partial
