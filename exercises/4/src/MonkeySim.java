@@ -2,8 +2,9 @@ import java.util.*;
 
 public class MonkeySim {
 
-	private static final int HEADER = 50000;
-
+	public static boolean verbose = true;
+	public static final int HEADER = 50000;
+	
 	/**
 	 * Print out use message and exit with error code 1.
 	 */
@@ -53,7 +54,6 @@ public class MonkeySim {
 	 */
 
 	public Monkey getFirstMonkey(List<Monkey> ml) {
-
 		int x = ml.size() - 1;
 		int f = x * 33;
 		int r = 17;
@@ -159,10 +159,14 @@ public class MonkeySim {
 			Monkey m2 = ml.get(n);
 			Banana b = m.throwBananaFrom();
 			m2.throwBananaTo(b);
-			String s = stringifyResults(mw.getRounds(), m, m2);
-			System.out.println(s);
+			if (verbose) {
+				String s = stringifyResults(mw.getRounds(), m, m2);
+				System.out.println(s);
+			}
 		}
-		System.out.println("First monkey has the banana!");
+		if (verbose) {
+			System.out.println("First monkey has the banana!");
+		}
 		return mw.getRounds();
 	}
 
@@ -173,9 +177,9 @@ public class MonkeySim {
 	 * @param args - Array of arguments from cmd line
 	 */
 
-	public static void main(String[] args) {
-
+	public static void main(String[] args) throws InfiniteLoopException {
 		int s = getStartingMonkeyNum(args);
+		
 		Monkey tmpMonkey;
 		Banana b = new Banana();
 		MonkeyWatcher mw = new MonkeyWatcher();
