@@ -12,6 +12,7 @@ public class TestRunner {
 
 		// ADD ANY CLASSES YOU WISH TO TEST HERE
 		classesToTest.add(MonkeySimPinningTest.class);
+		classesToTest.add(MonkeySimStochasticTest.class);
 
 		// For all test classes added, loop through and use JUnit
 		// to run them.
@@ -23,6 +24,7 @@ public class TestRunner {
 
 			for (Failure f : r.getFailures()) {
 				System.out.println(f.toString());
+				System.out.println(f.getTrace());
 			}
 
 			// If r is not successful, there was at least one
