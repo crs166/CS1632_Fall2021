@@ -409,10 +409,10 @@ we expect all tests to fail, if you have done the work.
 
 ## Resources
 
-* Constraining generated values using @InRange and other annotations:
+* Constraining generated values using @InRange and other annotations:  
 https://pholser.github.io/junit-quickcheck/site/1.0/usage/constraining.html#
 
-* Generating complex values such as strings:
+* Generating complex values such as strings:  
 https://pholser.github.io/junit-quickcheck/site/1.0/usage/complex-types.html
 
 # Extra Credit
