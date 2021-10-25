@@ -244,7 +244,7 @@ for a particular equivalence class.
 
 For byte streams, equivalence classes cannot be simply described using a
 "range" like numbers.  For byte streams, equivalence classes are things
-like a string with less 10 characters, a string in all-caps, a string in
+like a string with less than 10 characters, a string in all-caps, a string in
 proper XML format, etc.  These cannot be expressed using the @InRange
 annotation.  So we need to create a specialized random value generator for
 each equivalence class.  Otherwise, there is fat chance that you will hit
