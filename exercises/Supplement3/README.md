@@ -70,7 +70,7 @@ StringOpsTest.java - A QuickCheck JUnit class that performs property-based testi
 
 ABCStringGenerator.java - A QuickCheck generator class that generates random strings containing the characters 'A', 'B', and 'C'.
 
-ValidHTMLStringGenerator.java - A QuickCheck generator class that generates random valid HTML strings containing HTML tags such as <b>, </b>, <i>, </i> (**modify**).
+ValidHTMLStringGenerator.java - A QuickCheck generator class that generates random valid HTML strings containing HTML tags such as \<b\>, \</b\>, \<i\>, \</i\> (**modify**).
 
 TestRunner.java - Driver class that contains the main method to invoke JUnit on IntegerOpsTest and StringOpsTest.
 
