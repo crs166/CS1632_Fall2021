@@ -12,6 +12,7 @@
   * [Task 6: Debug StringOps isValidHTML method](#task-6-debug-stringops-isvalidhtml-method)
     + [StringOpsTest Lessons](#stringopstest-lessons)
   * [Submission](#submission)
+  * [Resources](#resources)
 - [Extra Credit](#extra-credit)
   * [Description](#description-1)
   * [What to do](#what-to-do-1)
@@ -405,6 +406,14 @@ The autograder will test your updated IntegerOpsTest, StringOpsTest, and
 ValidHTMLStringGenerator classes against the original IntegerOps and StringOps
 classes.  Since we are testing against the original classes before debugging,
 we expect all tests to fail, if you have done the work.
+
+## Resources
+
+* Constraining generated values using @InRange and other annotations:
+https://pholser.github.io/junit-quickcheck/site/1.0/usage/constraining.html#
+
+* Generating complex values such as strings:
+https://pholser.github.io/junit-quickcheck/site/1.0/usage/complex-types.html
 
 # Extra Credit
 
