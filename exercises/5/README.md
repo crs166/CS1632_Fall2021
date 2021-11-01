@@ -300,11 +300,11 @@ For Mac/Linux users:
 $ bash runJPF.sh DrunkCarnivalShooter.macos.jpf
 ```
 
-If you run the above, JPF will immediately display an error similar to the following:
+If you run the above, JPF will display an output similar to the following:
 
 ```
 ...
-====================================================== search started: 10/25/20 9:54 PM
+====================================================== search started: 10/25/21 9:54 PM
 Round #0:  ||    ||    ||    ||
 Choose your target (0-3):
 
@@ -357,7 +357,7 @@ Now let's try running runJPF.bat one more time like the above.  This will show
 a new error message due to an exception:
 
 ```
-====================================================== search started: 10/25/20 10:01 PM
+====================================================== search started: 10/25/21 10:01 PM
 Round #0:  ||    ||    ||    ||
 Choose your target (0-3):
 
