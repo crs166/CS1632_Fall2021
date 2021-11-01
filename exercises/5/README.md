@@ -20,7 +20,7 @@ Fall Semester 2021 - Exercise 5
 
 * DUE: Nov 5 (Friday), 2021 11:59 PM
 
-**GitHub Classroom Link:** TBD
+**GitHub Classroom Link:** https://classroom.github.com/a/itfn7J30
 
 ## Description
 
