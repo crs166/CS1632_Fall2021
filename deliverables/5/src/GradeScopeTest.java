@@ -11,7 +11,6 @@ import java.lang.reflect.Method;
 import java.nio.charset.Charset;
 import java.util.Arrays;
 import java.util.Random;
-
 import org.junit.After;
 import org.junit.Before;
 import org.junit.FixMethodOrder;
@@ -22,10 +21,9 @@ import org.mockito.Mockito;
 @FixMethodOrder(MethodSorters.NAME_ASCENDING)
 public class GradeScopeTest {
 
-	private final int beanCounts[] = { 0, 2, 20, 200 };
-
-	private final int logicSlotCounts[] = { 1, 10, 20 };
-	private BeanCounterLogic logics[];
+	private final int[] beanCounts = { 0, 2, 20, 200 };
+	private final int[] logicSlotCounts = { 1, 10, 20 };
+	private BeanCounterLogic[] logics;
 	private Random rand;
 
 	private String getFailString(int logicIndex, int beanCount) {
@@ -60,6 +58,11 @@ public class GradeScopeTest {
 		return inSlots;
 	}
 
+	/**
+	 * The test fixture. Creates multiple machines (logics) with different slot
+	 * counts. It also creates a real random object. But the random object is seeded
+	 * with 42 so the tests will be reproducible.
+	 */
 	@Before
 	public void setUp() {
 		logics = new BeanCounterLogic[logicSlotCounts.length];
@@ -105,9 +108,12 @@ public class GradeScopeTest {
 				int inFlightExpected = (beanCount > 0) ? 1 : 0;
 				int inSlotsExpected = 0;
 				
-				assertEquals(failString + ". Check on remaining bean count", remainingExpected, remainingObserved);
-				assertEquals(failString + ". Check on in-flight bean count", inFlightExpected, inFlightObserved);
-				assertEquals(failString + ". Check on in-slot bean count", inSlotsExpected, inSlotsObserved);
+				assertEquals(failString + ". Check on remaining bean count",
+						remainingExpected, remainingObserved);
+				assertEquals(failString + ". Check on in-flight bean count",
+						inFlightExpected, inFlightObserved);
+				assertEquals(failString + ". Check on in-slot bean count",
+						inSlotsExpected, inSlotsObserved);
 			}
 		}
 	}
@@ -233,8 +239,8 @@ public class GradeScopeTest {
 		PrintStream stdout = System.out;
 		try {
 			System.setOut(new PrintStream(out, false, Charset.defaultCharset().toString()));
-		}
-		catch (UnsupportedEncodingException uex){	
+		} catch (UnsupportedEncodingException uex) {
+			fail();
 		}
 		
 		// TODO: Implement using out.toString() to get output stream
