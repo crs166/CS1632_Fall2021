@@ -142,9 +142,8 @@ unit tests. Sometimes this 2-step process is necessary because sometimes you
 cannot write high quality unit tests before refactoring to make the code more
 testable (e.g. via dependency injection).  So you need a temporary end-to-end
 pinning test to protect the code base meanwhile.  For this deliverable, there
-is no reason you cannot write unit tests from the get-go for pinning tests as
-the dependency injection(s) has already been done for you.  An example is the
-**setCells** method in MainPanel.
+is no reason you cannot write **unit tests** from the get-go for pinning tests
+as the dependency injection(s) has already been done for you.  
 
 Here are some requirements for your pinning tests:
 
