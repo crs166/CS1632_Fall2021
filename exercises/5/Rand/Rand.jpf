@@ -5,7 +5,7 @@ sourcepath=./
 # Enumerate all possible values returned by Random.nextInt
 cg.enumerate_random = true
 
-# If you want to a trace of program statements leading up to the error, enable the below instead.
+# On property violation, print the error and the execution trace leading up to the error
 report.console.property_violation=error,trace
 
 # Print program output as JPF traverses all possible paths
