@@ -725,19 +725,19 @@ what gets printed in the text UI debug output).  You may want to add to the
 failString this string representation for the current step, or all previous
 steps.
 
-  FIX: If the BeanCounterLogicImpl.toString() has a line that looks like:
+   FIX: If the BeanCounterLogicImpl.toString() has a line that looks like:
 
-  ```
-  fmt.format("%n");
-  ```
+   ```
+   fmt.format("%n");
+   ```
 
-  Please change it to:
+   Please change it to:
 
-  ```
-  fmt.format("\n");
-  ```
+   ```
+   fmt.format("\n");
+   ```
 
-  There is a glitch within JPF that prevents it from using %n in the format
+   There is a glitch within JPF that prevents it from using %n in the format
 string.
 
 Tip: Sometimes there are situations where JUnit emits a failure but the failure did
