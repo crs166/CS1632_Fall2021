@@ -44,8 +44,9 @@ docker.
 
 1. Get a free account from https://test.pypi.org/.
 
-1. Get a free account from GitLab.com.  If you are a new user, you may have
-   to provide credit card information in order to use CI/CD pipelines:
+1. Get a free account from https://GitLab.com by starting the free trial.
+   If you are a new user, you may have to provide credit card information in
+order to use CI/CD pipelines:
 https://about.gitlab.com/pricing/#why-do-i-need-to-enter-credit-debit-card-details-for-free-pipeline-minutes.
 It is still free up to 400 CI/CD minutes, which is more than enough for this
 exercise, but the credit card info is still needed to prevent cryptocurrency
