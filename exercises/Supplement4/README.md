@@ -42,9 +42,15 @@ docker.
 
 # Prerequisites
 
-1. Get a free account from GitLab.com
+1. Get a free account from https://test.pypi.org/.
 
-1. Get a free account from https://test.pypi.org/
+1. Get a free account from GitLab.com.  If you are a new user, you may have
+   to provide credit card information in order to use CI/CD pipelines:
+https://about.gitlab.com/pricing/#why-do-i-need-to-enter-credit-debit-card-details-for-free-pipeline-minutes.
+It is still free up to 400 CI/CD minutes, which is more than enough for this
+exercise, but the credit card info is still needed to prevent cryptocurrency
+miners from abusing cloud resources according to GitLab.  If you are an old
+user, like I am, you wouldn't need to provide this information.
 
 1. Install Python 3.9 from https://www.python.org/downloads/ (any version 3.9.*
    should work) After installing Python, running `python -V` should give you the
