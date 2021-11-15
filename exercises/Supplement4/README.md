@@ -49,8 +49,11 @@ docker.
 https://about.gitlab.com/pricing/#why-do-i-need-to-enter-credit-debit-card-details-for-free-pipeline-minutes.
 It is still free up to 400 CI/CD minutes, which is more than enough for this
 exercise, but the credit card info is still needed to prevent cryptocurrency
-miners from abusing cloud resources according to GitLab.  If you are an old
-user, like I am, you wouldn't need to provide this information.
+miners from abusing cloud resources according to GitLab.  In order to find
+out if you need the credit card info, go to `CI/CD > Pipelines` after having
+forked the Part 1 repository and try clicking on `Run pipeline`.  It will
+ask you for the info at that point.  If you are an old user, like I am, you
+wouldn't need to provide it and the pipeline will just run.
 
 1. Install Python 3.9 from https://www.python.org/downloads/ (any version 3.9.*
    should work) After installing Python, running `python -V` should give you the
