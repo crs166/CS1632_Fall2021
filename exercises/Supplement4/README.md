@@ -1,0 +1,101 @@
+# CS 1632 - Software Quality Assurance
+Fall Semester 2021 - Supplementary Exercise 4
+
+## Description
+
+During the semester, we learned various ways in which we can automate testing.
+But all that automation is of no use if your software organization as a whole
+does not invoke those automated test scripts diligently.  Preferably, those test
+scripts should be run before every single source code change to the repository,
+and for good measure, regularly every night or every weekend just in case.  Now,
+there are many reasons why this does not happen if left to individual
+developers:
+
+1. Developers are human beings so they forget.  Or, they remember to run some
+   tests, just not the test suites that are relevant to the changes they have
+made.
+
+1. Developers are sometimes on a tight schedule, so they are tempted to skip
+   extensive testing that may delay them.
+
+1. Developers are sometimes aware that certain test cases do not pass, but they
+   are tempted to push the code to the repository anyway, because again, they
+have a deadline to meet.  They justify their actions by telling themselves that
+they will fix the failing tests "as soon as possible", or that the test cases
+are not testing anything important, or that failing test cases in modules under
+the purview of another team "is not my problem".
+
+In Part 1 of this exercise, we will learn how to build an automated "pipeline"
+of events that get triggered automatically under certain conditions (e.g. a
+source code push).  A pipeline can automate the entire process from source code
+push to software delivery to end users, making sure that if software is
+delivered, it has been fully tested, and if one more tests fail, the delivery is
+stopped in its tracks and the defects are reported properly to the relevant
+people.
+
+In Part 2, we will learn how to use dockers as part of our testing stage.
+Dockers are virtualized execution environments which can emulate the execution
+environments in the deployment sites (OS, libraries, webservers, databases,
+etc.) so that software can be tested in situ.  In our case, we will test our
+software package we built in Part 1 in the context of a webserver running on a
+docker.
+
+# Prerequisites
+
+1. Get a free account from GitLab.com
+
+1. Get a free account from https://test.pypi.org/
+
+1. Install Python 3.9 from https://www.python.org/downloads/ (any version 3.9.*
+   should work) After installing Python, running `python -V` should give you the
+proper version number.  If it says there is no such command, make sure you check
+a box that says "Add Python to environment variables" during installation.
+
+   For MacOS and Linux, you may get an older version of Python because Python
+version 3 installs a binary named python3 and does not overwrite the old binary
+named python.  So you may have to alias python such that it refers to the new
+python3 binary.  You can do that by editing ~/.bash_profile (using the nano
+editor in this example):
+
+   ```
+   nano ~/.bash_profile
+   ```
+
+   And then adding somewhere the following two lines:
+
+   ```
+   alias python=/usr/local/bin/python3
+   alias pip=/usr/local/bin/pip3
+   ```
+
+   After having done this, you can source your bash_profile to your current bash shell:
+
+   ```
+   source ~/.bash_profile
+   ```
+
+   Or, you can just launch a new terminal bash shell, and it will automatically read in the new profile.
+    
+   Now you should get the correct versions for python and pip (I install Python version 3.9.8):
+
+   ```
+   wahn:~ wahn$ python -V
+   Python 3.9.8
+   wahn:~ wahn$ pip -V
+   pip 21.2.4 from /Library/Frameworks/Python.framework/Versions/3.9/lib/python3.9/site-packages/pip (python 3.9)
+   ```
+
+1. Install Docker from https://docs.docker.com/get-docker/. For Windows, you will
+   have to install WSL2 along with docker as noted in the instructions.  If all
+goes well, you should be able to launch Docker Desktop with no issues.
+
+# Part 1: CI/CD Pipelines
+
+Please go to: https://gitlab.com/wonsun.ahn/simple-python-package/.  And then
+fork the repository by clicking on the `Fork` button at the top right.  This
+will give you your own repository to work on.  Follow the README.md in that
+repository.
+
+# Part 2: Dockers
+
+To be released.
