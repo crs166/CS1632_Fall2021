@@ -91,10 +91,11 @@ goes well, you should be able to launch Docker Desktop with no issues.
 
 # Part 1: CI/CD Pipelines
 
-Please go to: https://gitlab.com/wonsun.ahn/simple-python-package/.  And then
-fork the repository by clicking on the `Fork` button at the top right.  This
-will give you your own repository to work on.  Follow the README.md in that
-repository.
+Please go to: https://gitlab.com/wonsun.ahn/simple-python-package/.  And
+then fork the repository by clicking on the `Fork` button at the top right.
+This will give you your own repository to work on.  Also, clone the forked
+repository to your laptop using the HTTPS clone link.  Then, follow the
+README.md in that repository after cd'ing into the local clone.
 
 # Part 2: Dockers
 
