@@ -109,4 +109,6 @@ README.md in that repository after cd'ing into the local clone.
 
 # Part 2: Dockers
 
-To be released.
+Please go to: https://gitlab.com/wonsun.ahn/dockerized-server.  Just like for
+Part 1, fork the repository, clone it, and then cd into it.  Then follow the
+README.md instructions.
