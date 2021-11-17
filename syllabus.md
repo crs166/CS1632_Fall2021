@@ -163,9 +163,9 @@ on Zoom.
 also encouraged to participate on Zoom.
 
 * 12/1 (Wednesday) 9:30 - 10:45, 3:00 - 4:15: [US
-  Steel](https://www.ussteel.com/) lecture on Cyber Security and Penetration
-Testing.  Both lectures are going to be identical, so you only need to
-participate in your section.
+  Steel](https://www.ussteel.com/) **Zoom only** lecture on Cyber Security and
+Penetration Testing.  Both lectures are going to be identical, so you only need
+to participate in your section.
 
 * If you participate in a lecture given for the other section, then I will
   count that as an attendance and waive an absence you had previously!
