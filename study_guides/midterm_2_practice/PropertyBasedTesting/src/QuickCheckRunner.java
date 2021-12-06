@@ -15,7 +15,7 @@ public class QuickCheckRunner {
 		ArrayList<Class> classesToTest = new ArrayList<Class>();
 
 		// ADD ANY CLASSES YOU WISH TO TEST HERE
-		classesToTest.add(JPFTest.class);
+		classesToTest.add(QuickCheckTest.class);
 
 		// For all test classes added, loop through and use JUnit
 		// to run them.
