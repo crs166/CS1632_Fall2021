@@ -4,17 +4,18 @@ import com.pholser.junit.quickcheck.runner.JUnitQuickcheck;
 import org.junit.runner.RunWith;
 
 import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.*;
 
 @RunWith(JUnitQuickcheck.class)
 public class QuickCheckTest {
 	@Property
-	public void testAdd(@InRange(minInt = -100, maxInt = 100) int x, @InRange(minInt = -100, maxInt = 100) int y) {
+	public void testAdd(@InRange(minInt = -10, maxInt = 10) int x, @InRange(minInt = -10, maxInt = 10) int y) {
 		int ret = IntegerOps.add(x, y);
 		// TODO: Fill in
 	}
 	
 	@Property
-	public void testSquare(@InRange(minInt = -100, maxInt = 100) int x) {
+	public void testSquare(@InRange(minInt = -10, maxInt = 10) int x) {
 		int ret = IntegerOps.square(x);
 		// TODO: Fill in
 	}

@@ -1,4 +1,5 @@
 import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.*;
 import org.junit.BeforeClass;
 import org.junit.Test;
 import gov.nasa.jpf.vm.Verify;
