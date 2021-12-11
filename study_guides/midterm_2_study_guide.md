@@ -136,5 +136,5 @@ with good defect coverage even for large programs in terms of v, t, k.
   and be familiar with the terminology.
 * Be able to explain how each of the 8 common types of attacks are perpetrated
   and possible protections.
-* Be able to explain what Single Origin Policy (SOP) is in web security.
+* Be able to explain what Same Origin Policy (SOP) is in web security.
 * Be able to explain how cross-site scripting circumvents SOP.
