@@ -152,9 +152,23 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 ## WEEK 14 (Week of 29 NOV)
 
-* 11/29 (Monday) 3:00 - 4:15: [CGI Inc.](https://www.cgi.com/en) lecture on Scalability Testing using JMeter
+* 11/29 (Monday) 9:30 - 10:45: **In-person** [PNC Bank](https://www.pnc.com)
+  lecture on Shift-Left and Shift-Right Strategies in Software QA.  If you are
+in this section, you are required to participate in-person.  If you are in the
+afternoon section, you are encouraged to participate in-person (SENSQ 5502) or
+on Zoom.
 
-* 12/1 (Wednesday) 9:30 - 10:45, 3:00 - 4:15: [US Steel](https://www.ussteel.com/) lecture on Cyber Security and Penetration Testing
+* 11/29 (Monday) 3:00 - 4:15: **Zoom only** [CGI Inc.](https://www.cgi.com/en)
+  lecture on Scalability Testing using JMeter.  Morning section students are
+also encouraged to participate on Zoom.
+
+* 12/1 (Wednesday) 9:30 - 10:45, 3:00 - 4:15: **Zoom only** [US
+  Steel](https://www.ussteel.com/) lecture on Cyber Security and Penetration
+Testing.  Both lectures are going to be identical, so you only need to
+participate in your section.
+
+* If you participate in a lecture given for the other section, then I will
+  count that as an attendance and waive an absence you had previously!
 
 ## WEEK 15 (Week of 6 DEC)
 
@@ -162,7 +176,12 @@ AFIST = [_A Friendly Introduction to Software Testing_](software-quality-assuran
 
 * Class 2: Study for Midterm 2 (NO CLASS)
 
-* Midterm 2 on GradeScope: TBD
+* Midterm 2 on GradeScope: Dec. 9 (Thursday) 10:00 AM - Dec. 11 (Saturday) 11:59 PM
+  * Check out the **[study guide](/study_guides/midterm_2_study_guide.md)**!
+  * Will be posted as link named "Midterm 2" at Thursday 10:00 AM.
+  * You will choose a 3 hour span to complete exam within the above 3-day period.
+  * Your 3 hours begin the moment you click on link and agree to the terms on the next screen.
+  * Open book but individual work.
 
 ## WEEK 16 (Week of 13 DEC)
 
